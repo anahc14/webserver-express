@@ -10,7 +10,7 @@ app.use(express.static(__dirname + '/public'));
 hbs.registerPartials(__dirname + '/views/parcials');
 app.set('view engine', 'hbs');
 
-const port = process.env.port || 3000;
+const port = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
 
